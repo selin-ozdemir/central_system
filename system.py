@@ -32,7 +32,7 @@ class CentralSystem:
             print(f"Error handling robot: {e}")
             if robot_name in self.robots:
                 del self.robots[robot_name]
-                print(f" Robot "robot_name" removed from registry")
+                print(f" Robot '{robot_name}' removed from registry")
     
     def send_command(self, robot_name, position):
         """Send command to a specific robot"""
